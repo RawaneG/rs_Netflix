@@ -85,22 +85,22 @@ const Auth = () => {
                   type="text"
                   label="Username"
                   value={name}
-                  onChange={(e: any) => setName(e.target.value)} 
+                  onChange={(e: any) => setName(e.target.value)}
                 />
               )}
               <Input
                 id="email"
                 type="email"
-                label="Email address or phone number"
+                label="Email address"
                 value={email}
-                onChange={(e: any) => setEmail(e.target.value)} 
+                onChange={(e: any) => setEmail(e.target.value)}
               />
               <Input
-                type="password" 
-                id="password" 
-                label="Password" 
+                type="password"
+                id="password"
+                label="Password"
                 value={password}
-                onChange={(e: any) => setPassword(e.target.value)} 
+                onChange={(e: any) => setPassword(e.target.value)}
               />
             </div>
             <button onClick={variant === 'login' ? login : register} className="bg-red-600 py-3 text-white rounded-md w-full mt-10 hover:bg-red-700 transition">
@@ -115,7 +115,7 @@ const Auth = () => {
               </div>
             </div>
             <p className="text-neutral-500 mt-12">
-              {variant === 'login' ? 'First time using Netflix?' : 'Already have an account?'}
+              {variant === 'login' ? 'First time using Netflix ?' : 'Already have an account ?'}
               <span onClick={toggleVariant} className="text-white ml-1 hover:underline cursor-pointer">
                 {variant === 'login' ? 'Create an account' : 'Login'}
               </span>
